@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2a2D2D;
+    color: #FDF1E7;
+    align-items: center;
+}
+
+svg{
+    background-color: #1f3838;
+}
+#chart{
+    min-width: 1000px;
+    min-height: 600px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+div.tooltip {
+    position: absolute;
+    padding: 10px;
+    font: 12px Arial;
+    background: rgba(255, 255, 204, 0.9);
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.6);
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    color: black;
+  }
+ a{
+    color: aqua;
+ }
+ #legend{
+    transform: translate(405px, -200px);
+    max-width: 190px;
+    
+    
+ }
+ #legend text{
+    fill: white;
+ }
+ .county:hover{
+    fill: black;
+ }
+
+ 

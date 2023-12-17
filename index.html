@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./choro.ico" type="image/x-icon" />
+
+    <title>Choropleth Map</title>
+</head>
+<body>
+    <h1 id="title">United States Educational Attainment</h1>
+    <h5 id="description">Percentage of adults age 25 and older with a bachelor's degree or higher
+        (2010-2014). Source: <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx" target="_blank">USDA Economic Research Service</a></h4>
+    <svg id="chart">
+
+    </svg>
+    <svg id="legend">
+        <g>
+            <rect x="10" y="0" width="40" height="40" fill="lightgreen"></rect>
+            <text x="60" y="20">Less than 15%</text>
+        </g>
+        <g>
+            <rect x="10" y="40" width="40" height="40" fill="limegreen"></rect>
+            <text x="60" y="60">>15% to 30%</text>
+        </g>
+        <g>
+            <rect x="10" y="80" width="40" height="40" fill="green"></rect>
+            <text x="60" y="100">30% to 45%</text>
+        </g>
+        <g>
+            <rect x="10" y="120" width="40" height="40" fill="darkgreen"></rect>
+            <text x="60" y="140">Greater than 45%</text>
+        </g>
+    </svg>
+    <script src="./index.js"></script>
+</body>
+</html>
